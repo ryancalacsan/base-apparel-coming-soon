@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.hero {
+    height: 250px;
+    background-image: url("../images/hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 64px;
+
+    @include breakpoint-up(large) {
+        background-image: url("../images/hero-desktop.jpg");
+        grid-area: hero;
+        height: 100%;
+        margin-bottom: 0;
+        background-position: center;
+    }
+}

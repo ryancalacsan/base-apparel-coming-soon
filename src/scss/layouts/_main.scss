@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+main {
+    @include breakpoint-up(large) {
+        display: grid;
+        height: 100%;
+        max-width: 100%;
+        grid-template-areas:
+            "header hero"
+            "content hero";
+        grid-template-columns: minmax(500px, auto) minmax(10%, 610px);
+        grid-template-rows: 234px auto;
+
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-size: contain;
+    }
+}

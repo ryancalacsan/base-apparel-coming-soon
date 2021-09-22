@@ -1,0 +1,112 @@
+@use "../abstracts/" as *;
+
+.content {
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    @include breakpoint-up(large) {
+        margin: 0 165px;
+        max-width: 444px;
+        text-align: left;
+    }
+    h1::first-line {
+        color: $desaturated-red;
+        font-weight: $light;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: $font-lg;
+        font-weight: $semi-bold;
+        line-height: 42px;
+        letter-spacing: 10.83px;
+        color: $dark-grayish-red;
+        margin-bottom: 16px;
+
+        @include breakpoint-up(large) {
+            font-size: $font-xl;
+            line-height: 71px;
+            letter-spacing: 17.32px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__text {
+        color: $desaturated-red;
+        font-size: $font-sm;
+        line-height: 22px;
+        margin-bottom: 32px;
+
+        @include breakpoint-up(large) {
+            font-size: $font-md;
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__email {
+        font-size: $font-sm;
+        line-height: 28px;
+        padding: 10px 104px 8px 24px;
+        border-radius: 28px;
+        border: 1px solid $desaturated-red;
+        width: 100%;
+        background: none;
+        color: $dark-grayish-red;
+        margin-bottom: 8px;
+
+        @include breakpoint-up(large) {
+            padding: 14px 155px 12px 32px;
+        }
+
+        &::placeholder {
+            color: $desaturated-red;
+        }
+    }
+
+    &__err-icon {
+        position: absolute;
+        top: 13px;
+        right: 72px;
+
+        @include breakpoint-up(large) {
+            top: 17px;
+            right: 116px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 48px;
+        width: 64px;
+        border-radius: 28px;
+        border: none;
+        background: $gradient-2;
+        padding: 0;
+
+        @include breakpoint-up(large) {
+            height: 56px;
+            width: 100px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__err-text {
+        text-align: left;
+        margin-left: 24px;
+        color: $soft-red;
+        font-size: $font-xs;
+        line-height: 13px;
+        font-weight: $regular;
+    }
+}

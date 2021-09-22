@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: $font-md;
+    background: $gradient-1;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
