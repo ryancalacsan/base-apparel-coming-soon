@@ -26,7 +26,7 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form class="content__form" id="form">
+        <form class="content__form" id="form" novalidate>
           <input
             class="content__email"
             type="email"
@@ -34,14 +34,20 @@
             id="email"
             placeholder="Email Address"
           />
-          <img class="content__err-icon" src="./images/icon-error.svg" alt="" />
-          <button class="content__btn btn">
+          <img
+            class="content__err-icon content__err"
+            src="./images/icon-error.svg"
+            alt=""
+          />
+          <button type="submit" class="content__btn btn">
             <img src="./images/icon-arrow.svg" alt="" />
           </button>
-          <p class="content__err-text">Please provide a valid email</p>
+          <p class="content__err-text content__err">
+            Please provide a valid email
+          </p>
         </form>
       </section>
+      <script src="./js/script.js"></script>
     </main>
-    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,20 +1,20 @@
 @use "../abstracts" as *;
 
 .header {
-    margin-bottom: 32.11px;
+    margin-bottom: 2.0069rem;
     text-align: left;
 
     @include breakpoint-up(large) {
         margin-bottom: 0;
     }
     &__logo {
-        width: 100px;
-        margin-top: 31px;
-        margin-left: 32px;
+        width: 6.25rem;
+        margin-top: 1.9375rem;
+        margin-left: 2rem;
         @include breakpoint-up(large) {
-            width: 158px;
-            margin-top: 64.91px;
-            margin-left: 165px;
+            width: 9.875rem;
+            margin-top: 4.0569rem;
+            margin-left: 10.3125rem;
         }
     }
 }

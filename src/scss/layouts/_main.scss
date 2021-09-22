@@ -8,8 +8,8 @@ main {
         grid-template-areas:
             "header hero"
             "content hero";
-        grid-template-columns: minmax(500px, auto) minmax(10%, 610px);
-        grid-template-rows: 234px auto;
+        grid-template-columns: minmax(31.25rem, auto) minmax(10%, 38.125rem);
+        grid-template-rows: 14.625rem auto;
 
         background-image: url(../images/bg-pattern-desktop.svg);
         background-size: contain;
